@@ -55,7 +55,7 @@ public class Exchange {
      */
 	public boolean validateOrder(IOrder o) {
 		// Does ticker exist? See if the security associated with the order exists in the list of securities
-		if (this.securities.getSecurityByTicker(o.getSecurity().getTicker()==null){
+		if (this.securities.getSecurityByTicker(o.getSecurity().getTicker())==null){
 			System.err.println("Order validation: ticker " +"Order validation: ticker " + o.getSecurity().getTicker() + " not supported.");
 			return (false);
 		}
